@@ -1,0 +1,123 @@
+﻿
+<div id="bodywrap">
+    <section id="pagetop">
+        <p id="siteinfo">
+            Read, Write, Rate... With confidence!
+        </p>
+        <nav id="sitenav">
+            <ul>
+               
+
+
+                <li><a class="current" href="/Home/index">Home</a></li>
+                <li><a href="/Home/Signup">Sign Up</a></li>
+                <li><a href="/Home/writeArticle">Write Article</a></li>
+                <li><a href="/Home/myArticles">Your Articles</a></li>
+                <li><a href="/Home/About">About</a></li>
+                <li><a href="/Home/Contact">Contact</a></li>
+
+
+
+            </ul>
+        </nav>
+    </section>
+    <header id="pageheader">
+        <h1>
+            Tazkira<span>.com</span>
+        </h1>
+        <div id="search">
+            <form action="mainser" method=GET>
+                <input type="text" name="RT" value="search" hidden>
+                <div class="searchfield">
+
+                    <input type="text" value="" name="search" id="s">
+
+
+                </div>
+                <div class="searchbtn">
+                    <input type="image" src="/images/searchbtn.png" alt="search">
+                </div>
+            </form>
+        </div>
+    </header>
+
+    <div id="contents">
+        <section id="main">
+            <section id="featured">
+                <h2 class="ftheading">Featured</h2>
+                <div class="ftwrap">
+
+
+                    <div class="ftimg">
+                        <img src="/images/img1.jpg" width="204" height="128" alt="img1">
+                    </div>
+                    <div class="fttxt">
+
+                      
+                        <h3>Title</h3>
+                        <p>Hellowwwwwwww<br><a href="mainser?RT=read_article&aid=<%=featured.getId()%>">Read Full</a> </p>
+                    </div>
+                   
+                </div>
+            </section>
+
+          
+            <p style="color:red">msg</p>
+           
+                    <table style="font-size:12px;width:100%;table-layout: fixed;" border="1">
+                        <tr>
+                            <th>Article Title</th>
+                            <th>Write-Date</th>
+                            <th>Body</th>
+                            <th>Take Action</th>
+                        </tr>
+                        
+                            <tr>
+                                <td>Title</td>
+                                <td>Date</td>
+                                <td style="width:30em;word-wrap:break-word;height:150px">Body...</td>
+                                <td><a href="mainser?RT=deletearticle-u&article_id=<%=article.getId() %>"> Delete Article!</a></td>
+                            </tr>
+                           
+                    </table>
+                    
+                    <p style="font-size:14px;font-color:red">No articles found to manage!</p>
+                   
+
+                    <br><br><br><br><br><br>
+        </section>
+        <section id="sidebar">
+            <div id="sidebarwrap">
+
+                <h3>Logged-in as:<br>name</h3><br><br>
+                <div>
+                    <a href="mainser?RT=logout"><input type="button" value="Logout" id="logoutbutton"></a><br><br><br>
+                </div>
+                <h2>About Tazkira</h2>
+                <p>
+                    Tazkira is and urdu word which means "to talk about something",
+                    as its name suggests, this site is dedicated to the people who are willing
+                    to share their thoughts, ideas, experiences, knowledge about anything.
+                    But Main feature is that we will try to filter wrong information for you.
+                    As far as it is possible! Happy sharing. <a href="mainser?RT=about">Read More</a>
+                </p>
+
+            </div>
+        </section>
+        <div class="clear"></div>
+    </div>
+
+
+
+
+</div>
+<footer id="pagefooter">
+    <div id="footerwrap">
+        <div class="copyright">
+            2015 &copy; All rights reserved to QZI Inc.
+        </div>
+        <div class="credit">
+            <a href="https://www.facebook.com/zia.reh.1" title="Getin touch with admin" target="_blank">Contact Admin</a> On Facebook
+        </div>
+    </div>
+</footer>

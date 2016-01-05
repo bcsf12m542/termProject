@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+   
+    
+    
+    <script src="~/Scripts/js/jquery-1.4.min.js"></script>
+
+    <link href="~/Content/style.css" rel="stylesheet" />
+
+    <script src="~/Scripts/js/loopedslider.js"></script>
+
+
+        <title>
+            Tazkira-Home
+           
+
+        </title>
+
+        
+
+        <script type="text/javascript" charset="utf-8">
+        $(function ()
+            {
+		$('#slider').loopedSlider({
+			autoStart: 6000,
+			restart: 5000
+		});
+
+	});
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+<body>
+    
+        @RenderBody()
+    
+</body>
+</html>

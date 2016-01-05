@@ -1,0 +1,149 @@
+﻿
+<div id="bodywrap">
+    <section id="pagetop">
+        <p id="siteinfo">
+            Read, Write, Rate... With confidence!
+        </p>
+        <nav id="sitenav">
+            <ul>
+            
+                <li><a class="current" href="/Home/index">Home</a></li>
+                <li><a href="/Home/Signup">Sign Up</a></li>
+                <li><a href="/Home/writeArticle">Write Article</a></li>
+                <li><a href="/Home/myArticles">Your Articles</a></li>
+                <li><a href="/Home/About">About</a></li>
+                <li><a href="/Home/Contact">Contact</a></li>
+
+            </ul>
+        </nav>
+    </section>
+    <header id="pageheader">
+        <h1>
+            Tazkira<span>.com</span>
+        </h1>
+        <div id="search">
+            <form action="mainser" method=GET>
+                <input type="text" name="RT" value="search" hidden>
+                <div class="searchfield">
+
+                    <input type="text" value="" name="search" id="s">
+
+
+                </div>
+                <div class="searchbtn">
+                    <input type="image" src="/images/searchbtn.png" alt="search">
+                </div>
+            </form>
+        </div>
+    </header>
+    <div id="contents">
+        <section id="main">
+            <div id="leftcontainer">
+                <section id="normalheader" class="header2"></section>
+                <h2>Contact Us</h2>
+                <article class="post">
+                   
+
+                    <form action="mainser" method="post" class="form">
+                        <input type="text" name="RT" value="contactus-submit" hidden />
+                        <p class="textfield">
+                            <input name="author" id="author" value="" size="22" tabindex="1" type="text" required>
+                            <label for="author">
+                                <small>Name (required)</small>
+                            </label>
+                        </p>
+                        <p class="textfield">
+                            <input name="email" id="email" value="" size="22" tabindex="2" type="text" required>
+                            <label for="email">
+                                <small>Mail (will not be published) required</small>
+                            </label>
+                        </p>
+                        <p class="textfield">
+                            <input name="url" id="url" value="" size="22" tabindex="3" type="text">
+                            <label for="url">
+                                <small>Website</small>
+                            </label>
+                        </p>
+                        <p>
+                            <small>
+                                <strong>Message </strong> You can use xHTML
+                                tags:....
+                            </small>
+                        </p>
+                        <p class="text-area">
+                            <textarea name="comment" id="comment" cols="50" rows="10" tabindex="4" required></textarea>
+                        </p>
+                        <p>
+                            <input name="submit" id="submit" tabindex="5" type="image" src="/images/submit.png">
+                            <input name="comment_post_ID" value="1" type="hidden">
+                        </p>
+                        <div class="clear"></div>
+                    </form>
+
+                   
+                    <p style="font-size:15px;">res </p>
+                   
+                    <!--Important--><div class="clear"></div>
+                </article>
+            </div>
+        </section>
+        <section id="sidebar">
+            <div id="sidebarwrap">
+
+             
+                <form action="mainser" method=POST>
+                    <h3>Username/Email:</h3>
+                    <input type="text" name="RT" value="login" hidden />
+                    <input type="text" name="RF" value="/contact.jsp" hidden />
+                    <input type="text" name="username" id="username" maxlength="15" required><br><br>
+                    <h3>Password:</h3>
+                    <input type="password" name="password" id="password" required><br><br>
+                    <input id="loginbutton" type="submit" value="Login">
+                </form><br><br>
+                
+                <h3>Logged-in as:<br></h3><br><br>
+                <div>
+                    <a href="mainser?RT=logout"><input type="button" value="Logout" id="logoutbutton"></a><br><br><br>
+                </div>
+              
+
+
+                <h2>About Tazkira</h2>
+                <p>
+                    Tazkira is and urdu word which means "to talk about something",
+                    as its name suggests, this site is dedicated to the people who are willing
+                    to share their thoughts, ideas, experiences, knowledge about anything.
+                    But Main feature is that we will try to filter wrong information for you.
+                    As far as it is possible! Happy sharing. <a href="mainser?RT=about">Read More</a>
+                </p>
+                <h2>Categories</h2>
+                <ul>
+                    
+                                <li><a href="mainser?RT=catfilter&cat=<%=c %>"><c></a></li>
+                                
+                </ul>
+                <h2>Latest Posts</h2>
+                <ul>
+                  
+                        <li><a href="mainser?RT=catfilterbydate&cat=<%=c %>">c</a></li>
+                       
+
+
+                </ul>
+
+            </div>
+        </section>
+
+        <div class="clear"></div>
+    </div>
+</div>
+<footer id="pagefooter">
+    <div id="footerwrap">
+        <div class="copyright">
+            2015 &copy; All rights reserved to QZI Inc.
+        </div>
+        <div class="credit">
+            <a href="https://www.facebook.com/zia.reh.1" title="Getin touch with admin" target="_blank">Contact Admin</a> On Facebook
+        </div>
+    </div>
+</footer>

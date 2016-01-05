@@ -1,0 +1,155 @@
+﻿
+<div id="bodywrap">
+    <section id="pagetop">
+        <p id="siteinfo">
+            Read, Write, Rate... With confidence!
+        </p>
+        <nav id="sitenav">
+            <ul>
+                
+
+
+                <li><a class="current" href="/Home/index">Home</a></li>
+                <li><a href="/Home/Signup">Sign Up</a></li>
+                <li><a href="/Home/About">About</a></li>
+                <li><a href="/Home/Contact">Contact</a></li>
+
+            </ul>
+
+        </nav>
+    </section>
+
+    <header id="pageheader">
+        <h1>
+
+
+
+            Tazkira<span>.com</span>
+        </h1>
+        <div id="search">
+
+            <form action="mainser" method=GET>
+                <input type="text" name="RT" value="search" hidden>
+                <div class="searchfield">
+
+
+                    <input type="text" value="" name="search" id="s">
+
+
+
+                </div>
+                <div class="searchbtn">
+                    <input type="image" src="/images/searchbtn.png" alt="search">
+                </div>
+
+            </form>
+
+        </div>
+    </header>
+    <div id="contents">
+        <section id="main">
+            <section id="featured">
+                <h2 class="ftheading">Featured</h2>
+                <div class="ftwrap">
+                    <div class="ftimg">
+
+                        <img src="/images/img1.jpg" width="204" height="128" alt="img1">
+                    </div>
+                    <div class="fttxt">
+
+                       
+                        <h3>Title </h3>
+                        <p>Bodyy<br><a href="mainser?RT=read_article&aid">Read Full</a> </p>
+                    </div>
+                   
+                </div>
+
+            </section>
+           
+            <div id="post">
+                
+                <p style="color:red;font-size:14px"><br></p>
+               
+                <!--<iframe src="skyform/demo-reg.html" height="800" width="600">
+                </iframe>-->
+
+                <jsp:include page="skyform/demo-reg.html" />
+            </div>
+           
+            <p><br><br><strong>YOU ARE ALREADY LOGGED INN</strong></p>
+           
+            <div id="leftcontainer">
+
+
+
+            </div>
+        </section>
+        <section id="sidebar">
+            <div id="sidebarwrap">
+
+
+
+              
+                <form action="mainser" method=POST>
+                    <h3>Username/Email:</h3>
+                    <input type="text" name="RT" value="login" hidden />
+                    <input type="text" name="username" id="username" maxlength="15" required><br><br>
+                    <h3>Password:</h3>
+                   
+                    <p style="color:red"></p>
+                   
+                    <input type="password" name="password" id="password" required><br><br>
+                    <input id="loginbutton" type="submit" value="Login">
+                </form><br><br>
+                
+                <h3>Logged-in as:<br></h3><br><br>
+                <a href="mainser?RT=logout"><input type="button" value="Logout" id="logoutbutton"></a><br><br><br>
+               
+                <h2>About Tazkira</h2>
+                <p>
+                    Tazkira is and urdu word which means "to talk about something",
+                    as its name suggests, this site is dedicated to the people who are willing
+                    to share their thoughts, ideas, experiences, knowledge about anything.
+                    But Main feature is that we will try to filter wrong information for you.
+                    As far as it is possible! Happy sharing. <a href="mainser?RT=about">Read More</a>
+                </p>
+                <h2>Categories</h2>
+
+                <ul>
+
+                    
+                                <li><a href="mainser?RT=catfilter&cat=<%=c %>">list</a></li>
+                               
+                </ul>
+                <h2>Latest Posts</h2>
+
+                <ul>
+
+               
+                        <li><a href="mainser?RT=catfilterbydate&cat=<%=c %>">list</a></li>
+                        
+
+                </ul>
+
+
+            </div>
+        </section>
+
+
+
+        <div class="clear"></div>
+    </div>
+
+
+
+</div>
+<footer id="pagefooter">
+    <div id="footerwrap">
+        <div class="copyright">
+            2015 &copy; All rights reserved to QZI Inc.
+        </div>
+        <div class="credit">
+            <a href="https://www.facebook.com/zia.reh.1" title="Getin touch with admin" target="_blank">Contact Admin</a> On Facebook
+        </div>
+    </div>
+</footer>
